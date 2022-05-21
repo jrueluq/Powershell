@@ -9,9 +9,9 @@ foreach ($pc in $listado){
             Equipo = $pc
     
                # Comprobamos puertos
-            Puerto135 = Test-NetConnection $pc -Port 135 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty TcpTestSucceeded
-            Puerto139 = Test-NetConnection $pc -Port 139 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty TcpTestSucceeded
-            Puerto445 = Test-NetConnection $pc -Port 445 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty TcpTestSucceeded
+            Port135 = Test-NetConnection $pc -Port 135 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty TcpTestSucceeded
+            Port139 = Test-NetConnection $pc -Port 139 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty TcpTestSucceeded
+            Port445 = Test-NetConnection $pc -Port 445 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty TcpTestSucceeded
 
 
             # Comprobamos servicios
