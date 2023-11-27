@@ -1,0 +1,1 @@
+Compare-Object -ReferenceObject (Get-Content -Path C:\temp\file1.txt) -DifferenceObject (Get-Content -Path C:\temp\file2.txt) #-ExcludeDifferent
